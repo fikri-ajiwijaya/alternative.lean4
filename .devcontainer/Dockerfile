@@ -3,7 +3,10 @@ FROM debian:sid
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 RUN apt-get update && \
-    apt-get -y install git gnupg patch ssh
+    apt-get -y dist-upgrade && \
+    apt-get -y autopurge
+
+RUN apt-get -y install git gnupg patch ssh
 
 ARG USERNAME
 RUN useradd "${USERNAME}" -ms '/bin/bash'
