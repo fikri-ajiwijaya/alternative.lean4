@@ -1,3 +1,10 @@
 {
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-containers"
+			]
+		}
+	},
 	"image": "debian:sid"
 }
