@@ -1,5 +1,8 @@
 FROM debian:sid
 
+RUN apt-get update && \
+    apt-get -y install git gnupg ssh
+
 ARG USERNAME
 RUN useradd "${USERNAME}" -ms '/bin/bash'
 
