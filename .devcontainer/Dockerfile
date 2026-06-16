@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get -y dist-upgrade && \
     apt-get -y autopurge
 
-RUN apt-get -y install git gnupg patch ssh
+RUN apt-get -y install curl git gnupg jq less man parallel patch ssh wget xz-utils
 
 ARG USERNAME
 RUN useradd "${USERNAME}" -ms '/bin/bash'
