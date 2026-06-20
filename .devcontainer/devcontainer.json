@@ -2,6 +2,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"leanprover.lean4",
 				"ms-azuretools.vscode-containers"
 			]
 		}
